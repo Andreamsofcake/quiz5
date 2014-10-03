@@ -1,17 +1,9 @@
-console.log('stuff');
-
 var myReverse = function(array) {
   var backWards = [];
-  // array.forEach(function(value){
+  do {
     value = array.pop();
     backWards.push(value);
-    value = array.pop();
-    backWards.push(value);
-    value = array.pop();
-    backWards.push(value);
-    value = array.pop();
-    backWards.push(value);
-  // })
+  } while (array.length>0);
   // having trouble using slice the way expected.
   return backWards;
 };
